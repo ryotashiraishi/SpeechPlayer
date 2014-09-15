@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  host_url: MyString
+  description: MyString
+  subtitle_context_array: 
+  subtitle_time_array: 
+
+two:
+  host_url: MyString
+  description: MyString
+  subtitle_context_array: 
+  subtitle_time_array: 
