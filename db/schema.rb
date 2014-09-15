@@ -11,6 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20140914045939) do
+
+  create_table "speeches", force: true do |t|
+    t.string   "host_url"
+    t.string   "description"
+    t.text     "subtitle_context_array"
+    t.text     "subtitle_time_array"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end
