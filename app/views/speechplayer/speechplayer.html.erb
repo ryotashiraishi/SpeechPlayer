@@ -1,10 +1,14 @@
 
-<ul>
+
+<audio src= "<%= @Audio_URL %>" controls></audio>
+
+<br>
+
+
 <% 5.times do |i| %>
- <span id =sentence_<%= i %> > <%= @SpeechTimeArray[i] %> : <%= @SpeechContextArray[i] %></span>
+ <span id =sentence_<%= i %> > <%= @SpeechTimeArray[i] %> : <%= @SpeechContextArray[i] %></span><br>
 <% end %>
 
-</ul>
 
 
 
