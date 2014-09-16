@@ -34,3 +34,30 @@ var speech_time_array = [];
 
 
 
+<div id="tmp">
+  <% @SpeechContextArray.each_with_index do |speech_context, i| %>
+   <span id =sentence_<%= i %> > <%= @SpeechTimeArray[i] %> : </span>
+   <span class="target"><%= speech_context %></span><br>
+  <% end %>
+</div>
+
+
+
+<br><br>
+
+<div id="audio_player" host_url =  "<%= @Audio_URL %>" ></div>
+
+<script type="text/javascript">
+
+  var list = $('#tmp').find('span.target').text();
+
+
+  //var speech_time_array = [];
+  //<% i=0 %> 
+  //<% @SpeechTimeArray.each do |speech_time| %>
+  // speech_time_array[<%= i %>]= <%= speech_time %>;
+  // <% i+=1 %> 
+  //<% end %>
+
+
+</script>
