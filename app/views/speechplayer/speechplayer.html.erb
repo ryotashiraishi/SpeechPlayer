@@ -1,7 +1,6 @@
 
 
-<audio src= "<%= @Audio_URL %>" controls></audio>
-
+<!-- <audio src= "<%= @Audio_URL %>" controls></audio> -->
 <br>
 
 
@@ -9,6 +8,24 @@
  <span id =sentence_<%= i %> > <%= @SpeechTimeArray[i] %> : <%= @SpeechContextArray[i] %></span><br>
 <% end %>
 
+<br><br>
+
+  <div id="audio_player" host_url =  "<%= @Audio_URL %>" ></div>
+<script type="text/javascript">
+
+var speech_time_array = [];
+<% i=0 %> 
+<% @SpeechTimeArray.each do |speech_time| %>
+ speech_time_array[<%= i %>]= <%= speech_time %>;
+ <% i+=1 %> 
+<% end %>
+
+
+</script>
+
+ <script src="/assets/Audio/audioplayer.js"></script>
+  Audio play time = <span id="audio_time">play time</span><br>
+  number of sentenc = <span id="sentence_id">sentenceid</span>
 
 
 

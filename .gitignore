@@ -17,3 +17,5 @@
 *.rb~
 *.yml~
 *.erb~
+*.js~
+*.js_back
