@@ -4,9 +4,14 @@
 <br>
 
 
-<% 5.times do |i| %>
- <span id =sentence_<%= i %> > <%= @SpeechTimeArray[i] %> : <%= @SpeechContextArray[i] %></span><br>
+<% i=0 %> 
+<% @SpeechContextArray.each do |speech_context| %>
+ <span id =sentence_<%= i %> > <%= @SpeechTimeArray[i] %> : <%= speech_context %></span><br>
+ <% i+=1 %> 
 <% end %>
+
+
+
 
 <br><br>
 
